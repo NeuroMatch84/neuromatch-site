@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroMatch - Recrutamento Inteligente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #1a202c;
+    }
+    header, footer {
+      background: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #1e90ff;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    button {
+      background: #1e90ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0077cc;
+    }
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NeuroMatch</h1>
+    <p>Recrutamento inteligente com IA</p>
+  </header>
+
+  <div class="container">
+    <section class="section">
+      <h2>🚀 Contrata talentos 80% mais rápido com IA</h2>
+      <p>NeuroMatch analisa currículos e entrevistas com inteligência artificial para encontrar os candidatos certos. Rápido, justo e eficiente.</p>
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa">
+        </div>
+        <button type="submit">Junta-te à Lista de Espera</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h2>✨ Benefícios</h2>
+      <div class="benefits">
+        <div class="card">✅ Triagem automática de CVs</div>
+        <div class="card">✅ Análise emocional de entrevistas</div>
+        <div class="card">✅ Relatórios com ranking</div>
+        <div class="card">✅ Decisões mais justas e rápidas</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🎥 Página do Candidato</h2>
+      <form>
+        <div class="form-group">
+          <label for="c-nome">Nome Completo</label>
+          <input type="text" id="c-nome" name="c-nome" required>
+        </div>
+        <div class="form-group">
+          <label for="cv">Upload do CV (PDF)</label>
+          <input type="file" id="cv" name="cv" accept="application/pdf" required>
+        </div>
+        <div class="form-group">
+          <label for="video">Vídeo de Apresentação</label>
+          <input type="file" id="video" name="video" accept="video/*" required>
+        </div>
+        <div class="form-group">
+          <label for="linkedin">LinkedIn</label>
+          <input type="url" id="linkedin" name="linkedin">
+        </div>
+        <button type="submit">Submeter Candidatura</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    NeuroMatch © 2025 | Feito com IA e coração 💙
+  </footer>
+</body>
+</html>
